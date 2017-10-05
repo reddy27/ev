@@ -1,0 +1,47 @@
+<!--
+<ion-header>
+	<ion-navbar>
+	<ion-title>Payment</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-list>
+
+
+		<ion-item>
+		<ion-label floating id="userNamePayment">Username</ion-label>
+		<ion-input type="text" value=""></ion-input>
+		</ion-item>
+
+		<ion-item>
+		<ion-label floating id="passwordPayment">Password</ion-label>
+		<ion-input type="password" value=""></ion-input>
+		</ion-item>
+
+	</ion-list>
+
+	<div padding>
+		<button ion-button color="primary" block>Sign In</button>
+	</div>
+
+</ion-content>
+-->
+
+<ion-header>
+	<ion-navbar>
+	<ion-title>
+		{{ item.title }}
+	</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
+	
+	{{ item.description }}
+
+
+
+</ion-content>
